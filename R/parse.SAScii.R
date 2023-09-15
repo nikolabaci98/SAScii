@@ -16,7 +16,7 @@ function( sas_ri , beginline = 1 , lrecl = NULL ){
 	SASinput <- SAS.uncomment( SASinput , "/*" , "*/" )
 
 	#remote all * and ; from the code
-	SASinput <- SAS.uncomment( SASinput , "*" , ";" )
+	#SASinput <- SAS.uncomment( SASinput , "*" , ";" )
 
 	#find the first line with the word INPUT in it, which is where the ASCII variable locations occur.
 
