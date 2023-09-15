@@ -61,7 +61,12 @@ function( sas_ri , beginline = 1 , lrecl = NULL ){
 	}
 
 	##create FWF structure file (x)
-	x <- data.frame(NULL)
+	x <- data.frame(
+		varname = character(0),
+		width = numeric(0),
+		char = logical(0),
+		divisor = numeric(0)
+	     )
 
 	i <- j <- 1
 
